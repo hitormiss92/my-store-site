@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul and Jack Bakery | Wake Forest, NC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        pastryGold: '#D4AF37',
+                        warmBrown: '#4A3B32',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .serif-font { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-cream text-warmBrown antialiased">
+
+    <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wide text-warmBrown">Paul & Jack</a>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#menu" class="hover:text-pastryGold transition">Menu</a>
+                <a href="#about" class="hover:text-pastryGold transition">About</a>
+                <a href="#reviews" class="hover:text-pastryGold transition">Reviews</a>
+                <a href="#visit" class="hover:text-pastryGold transition">Find Us</a>
+            </nav>
+            <a href="#menu" class="bg-warmBrown text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-pastryGold transition shadow-sm">Order Online</a>
+        </div>
+    </header>
+
+    <section class="relative bg-stone-100 py-20 md:py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-stone-200 text-xs font-semibold uppercase tracking-wider">
+                    ⭐ 4.9 Rating (1,221+ Reviews)
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                    What butter <br><span class="text-pastryGold italic">was invented for.</span>
+                </h1>
+                <p class="text-lg text-stone-600 max-w-md">
+                    Experience an authentic European dream right in Wake Forest. Freshly baked, buttery, flaky pastries made with pure care and love.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#menu" class="bg-warmBrown text-white px-8 py-3.5 rounded-full font-semibold hover:bg-pastryGold transition shadow-md">Explore Menu</a>
+                    <a href="#visit" class="bg-white border border-stone-300 text-warmBrown px-8 py-3.5 rounded-full font-semibold hover:bg-stone-50 transition">Get Directions</a>
+                </div>
+            </div>
+            <div class="relative h-80 md:h-[450px] bg-stone-300 rounded-3xl overflow-hidden shadow-xl flex items-center justify-center text-stone-500 font-medium italic">
+                <div class="absolute inset-0 bg-gradient-to-tr from-warmBrown/40 to-transparent z-10"></div>
+                <span class="z-20 text-white text-xl">✨ Authentic European Bakery Vibe</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white border-y border-stone-200 py-6">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+            <div>
+                <p class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Location</p>
+                <p class="font-medium mt-1">Wake Forest, NC</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Today's Hours</p>
+                <p class="font-medium mt-1 text-green-600">Open · Closes 8 PM</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Pricing</p>
+                <p class="font-medium mt-1">$10–$20 per person</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase tracking-wider text-stone-400 font-semibold">Proudly</p>
+                <p class="font-medium mt-1">👩‍🍳 Women-Owned Business</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold mb-4">Our Signature Creations</h2>
+            <p class="text-stone-500">From our viral, decadent Brookies to perfectly laminated traditional croissants. Order online for quick pickup.</p>
+        </div>
+
+        <div class="flex justify-center space-x-4 mb-12">
+            <span class="bg-warmBrown text-white px-5 py-2 rounded-full text-sm font-medium cursor-pointer">All Items</span>
+            <span class="bg-white border border-stone-200 text-stone-600 px-5 py-2 rounded-full text-sm font-medium hover:bg-stone-50 cursor-pointer">Brookies</span>
+            <span class="bg-white border border-stone-200 text-stone-600 px-5 py-2 rounded-full text-sm font-medium hover:bg-stone-50 cursor-pointer">Croissants</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4 mb-3">
+                        <h3 class="text-xl font-bold">Brookie Lotus Biscoff</h3>
+                        <span class="text-lg font-bold text-pastryGold">$7.99</span>
+                    </div>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        Satisfy your sweet cravings with an irresistible harmonious blend of Lotus Biscoff spread, Lotus Biscoff cookie, and luscious white chocolate.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-100 flex justify-between items-center">
+                    <span class="text-xs bg-amber-50 text-amber-800 font-medium px-2.5 py-1 rounded-md">🔥 Highly Rated</span>
+                    <button class="text-sm font-semibold text-warmBrown hover:text-pastryGold transition">+ Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4 mb-3">
+                        <h3 class="text-xl font-bold">Brookie Chocolate Ganache</h3>
+                        <span class="text-lg font-bold text-pastryGold">$7.99</span>
+                    </div>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        Indulge in decadent bliss—a heavenly combination of rich chocolate ganache, luscious chocolate chips, and delightful hazelnut.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-100 flex justify-between items-center">
+                    <span class="text-xs bg-amber-50 text-amber-800 font-medium px-2.5 py-1 rounded-md">💯 100% (7 ratings)</span>
+                    <button class="text-sm font-semibold text-warmBrown hover:text-pastryGold transition">+ Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4 mb-3">
+                        <h3 class="text-xl font-bold">Brookie Red Velvet</h3>
+                        <span class="text-lg font-bold text-pastryGold">$7.99</span>
+                    </div>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        A divine fusion of flavors featuring layers of premium white chocolate, tart raspberry confit, and creamy rich cheesecake.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-100 flex justify-between items-center">
+                    <span class="text-xs bg-stone-50 text-stone-600 font-medium px-2.5 py-1 rounded-md">Popular</span>
+                    <button class="text-sm font-semibold text-warmBrown hover:text-pastryGold transition">+ Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4 mb-3">
+                        <h3 class="text-xl font-bold">Classic French Croissant</h3>
+                        <span class="text-lg font-bold text-pastryGold">$7.99</span>
+                    </div>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        Indulge in the heavenly flakiness and rich buttery goodness of our signature traditional recipe. Delightfully crisp outer layers.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-100 flex justify-between items-center">
+                    <span class="text-xs bg-amber-50 text-amber-800 font-medium px-2.5 py-1 rounded-md">🥐 Fan Favorite</span>
+                    <button class="text-sm font-semibold text-warmBrown hover:text-pastryGold transition">+ Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4 mb-3">
+                        <h3 class="text-xl font-bold">Brookie Oreo</h3>
+                        <span class="text-lg font-bold text-pastryGold">$7.99</span>
+                    </div>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        The ultimate mashup featuring a heavenly fusion of Oreo cookies and creamy white chocolate. A rich burst of flavor in every single bite.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-100 flex justify-between items-center">
+                    <span class="text-xs bg-stone-50 text-stone-600 font-medium px-2.5 py-1 rounded-md">Sweet Treat</span>
+                    <button class="text-sm font-semibold text-warmBrown hover:text-pastryGold transition">+ Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4 mb-3">
+                        <h3 class="text-xl font-bold">Brookie Lemon Confit</h3>
+                        <span class="text-lg font-bold text-pastryGold">$7.99</span>
+                    </div>
+                    <p class="text-sm text-stone-500 leading-relaxed">
+                        Tantalizing blend of zesty lemon confit and gourmet white chocolate with fresh lemon zest. Exquisite and brilliantly refreshing.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-stone-100 flex justify-between items-center">
+                    <span class="text-xs bg-amber-50 text-amber-800 font-medium px-2.5 py-1 rounded-md">💯 100% (5 ratings)</span>
+                    <button class="text-sm font-semibold text-warmBrown hover:text-pastryGold transition">+ Add to Order</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20 border-t border-stone-100">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1 relative h-72 md:h-96 bg-stone-200 rounded-2xl overflow-hidden flex items-center justify-center text-stone-400 italic">
+                🎨 [Bakery Interior / Display Case Photo]
+            </div>
+            <div class="space-y-6 order-1 md:order-2">
+                <h2 class="text-4xl font-bold">Straight Out of a Dream</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Welcome to Paul and Jack. We are a proudly women-owned boutique bakery dedicated to capturing the romantic, aesthetic spirit of authentic European pastry crafting. 
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    From our daily laminated doughs that make you feel like you're waking up in France, to our locally famous Italian hot chocolate and expertly pulled Irish cream espresso beverages—everything here is baked with strict care, premium butter, and immense love.
+                </p>
+                <div class="pt-2 flex gap-6">
+                    <div>
+                        <h4 class="text-2xl font-bold text-pastryGold">1,200+</h4>
+                        <p class="text-xs text-stone-400 font-semibold uppercase">5-Star Experiences</p>
+                    </div>
+                    <div class="border-l border-stone-200 pl-6">
+                        <h4 class="text-2xl font-bold text-pastryGold">100%</h4>
+                        <p class="text-xs text-stone-400 font-semibold uppercase">Fresh Daily</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12 gap-4">
+            <div>
+                <h2 class="text-4xl font-bold mb-2">What Our Guests Say</h2>
+                <p class="text-stone-500">Real feedback from our wonderful community of pastry lovers.</p>
+            </div>
+            <div class="bg-white px-4 py-3 rounded-xl border border-stone-200 flex items-center gap-3 self-start">
+                <span class="text-3xl font-bold text-warmBrown">4.9</span>
+                <div>
+                    <div class="text-amber-400 text-sm">⭐⭐⭐⭐⭐</div>
+                    <p class="text-xs text-stone-400 font-medium">Based on 1,221 Google Reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl border border-stone-200/70 shadow-sm">
+                <div class="text-amber-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="text-stone-600 text-sm italic mb-6">
+                    "The Biscoff Brookie is to die for. So DELICIOUS!!"
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center font-bold text-xs">AR</div>
+                    <div>
+                        <h4 class="text-xs font-bold">Annalee R.</h4>
+                        <p class="text-[10px] text-stone-400">Verified Customer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-stone-200/70 shadow-sm">
+                <div class="text-amber-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="text-stone-600 text-sm italic mb-6">
+                    "This bakery felt straight out of a dream! The food was both delicious and fresh. You can tell each pastry is baked with care and love, and the bakery had such an authentic European feel! It was so aesthetic in there..."
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center font-bold text-xs">KB</div>
+                    <div>
+                        <h4 class="text-xs font-bold">Keira Baxt</h4>
+                        <p class="text-[10px] text-stone-400">Local Guide</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-stone-200/70 shadow-sm">
+                <div class="text-amber-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="text-stone-600 text-sm italic mb-6">
+                    "The customer service, food, and coffee was all AMAZING!!! Sergej took our order and was very lovely. We got the pistachio raspberry croissant, the cinnamon roll with custard, and the creme brûlée bomboloni. All three magnificent!"
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center font-bold text-xs">MA</div>
+                    <div>
+                        <h4 class="text-xs font-bold">Maggie Allen</h4>
+                        <p class="text-[10px] text-stone-400">Local Guide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="bg-stone-900 text-stone-100 py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-white">Join Us For Pastries & Coffee</h2>
+                <p class="text-stone-400 text-sm leading-relaxed">
+                    Stop by our cafe space for dine-in comfort or quick takeout. We are conveniently situated in the heart of Wake Forest, North Carolina.
+                </p>
+                
+                <div class="space-y-4 text-sm text-stone-300">
+                    <div class="flex items-start gap-3">
+                        <span class="text-pastryGold">📍</span>
+                        <p>2010 S Main St #404, Wake Forest, NC 27587</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-pastryGold">📞</span>
+                        <p>(919) 855-0870</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-pastryGold">⏰</span>
+                        <div>
+                            <p class="text-white font-medium">Open Daily</p>
+                            <p class="text-xs text-stone-400">Closes at 8:00 PM tonight</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex gap-4">
+                    <a href="https://m.facebook.com" target="_blank" class="text-xs font-semibold bg-stone-800 hover:bg-stone-700 text-white px-4 py-2 rounded-lg transition">
+                        Connect on Facebook
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-stone-800 p-8 rounded-2xl border border-stone-700/50 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Planning a Visit?</h3>
+                    <p class="text-xs text-stone-400 mb-6">Fridays get busy around midday. Come early for the best choice of fresh-baked morning goods!</p>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-stone-900/60 p-3 rounded-xl flex justify-between items-center text-xs">
+                            <span>Service Options</span>
+                            <span class="text-pastryGold font-medium">Dine-in · Takeout</span>
+                        </div>
+                        <div class="bg-stone-900/60 p-3 rounded-xl flex justify-between items-center text-xs">
+                            <span>Avg. Expense</span>
+                            <span class="text-pastryGold font-medium">$10–20 per person</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <a href="https://maps.google.com" target="_blank" class="w-full block text-center bg-pastryGold text-stone-900 font-bold py-3 rounded-xl hover:bg-yellow-500 transition shadow-md text-sm">
+                        🗺️ Open in Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-500 text-center py-8 text-xs border-t border-stone-900">
+        <p>&copy; 2026 Paul and Jack Bakery. All rights reserved. Locally crafted with care in NC.</p>
+    </footer>
+
+</body>
+</html>
